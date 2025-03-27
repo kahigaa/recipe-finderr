@@ -96,7 +96,6 @@ function mealRecipeModal(meal){
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
 
-// Helper function to format instructions with line breaks
 function formatInstructions(instructions) {
     return instructions.split('\r\n').filter(step => step.trim() !== '').join('<br><br>');
 }
