@@ -137,7 +137,7 @@ body {
     background: var(--tenne-tawny-dark);
 }
 
-/* Meal details */
+
 .meal-details {
     position: fixed;
     top: 50%;
@@ -239,7 +239,7 @@ body {
     width: 100%;
 }
 
-/* Media Queries */
+
 @media screen and (min-width: 600px) {
     .meal-search-box {
         width: 540px;
@@ -268,3 +268,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
