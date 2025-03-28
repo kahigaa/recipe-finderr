@@ -51,23 +51,21 @@ function getMealRecipe(e){
     }
 }
 
-function mealRecipeModal(meal) {
-    // Get the first meal object from the array
+function mealRecipeModal(meal){
+    console.log(meal);
     meal = meal[0];
-    // Initialize an empty string to store the list of ingredients
+    
     let ingredientsList = '';
-    // Loop through possible 20 ingredients
-    for (let i = 1; i <= 20; i++) {
-        // Get the ingredient and remove extra spaces if it exists
-        let ingredient = meal[`strIngredient${i}`]?.trim();
-        // Get the corresponding measurement for the ingredient
-        let measure = meal[`strMeasure${i}`];
-        // If the ingredient exists it is added to the list
-        if (ingredient) {
-            ingredientsList += `<li>${ingredient} - ${measure}</li>`;
+    for(let i = 1; i <= 20; i++) {
+        const ingredient = meal[`strIngredient${i}`];
+        const measure = meal[`strMeasure${i}`];
+        
+        if(ingredient && ingredient.trim() !== '') {
+            ingredientsList += `
+                <li><span class="ingredient">${ingredient}</span> - <span class="measure">${measure}</span></li>
+            `;
         }
     }
-}
     
     let html = `
         <div class="recipe-header">
@@ -96,6 +94,7 @@ function mealRecipeModal(meal) {
     
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
+}
 
 
 function formatInstructions(instructions) {

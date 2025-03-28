@@ -34,4 +34,7 @@
 
 ## How to run
 
-### paste: in your browser and search
+### paste: https://kahigaa.github.io/recipe-finderr/ in your browser and search
+
+## powerpoint slides
+### https://1drv.ms/p/s!Aiyi46jRd5nBhZJtJt3RC4X4OrOTpw?e=OWivcZ
